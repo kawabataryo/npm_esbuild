@@ -1,0 +1,4 @@
+*.css
+*.map
+www/assets/js/*.js
+node_modules/

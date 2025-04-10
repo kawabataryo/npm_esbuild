@@ -1,0 +1,22 @@
+@charset 'utf-8';
+/* -----------------------------------
+	setPrefix
+-------------------------------------- */
+@mixin setPrefix($property, $value){
+	@each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+		#{$prefix}#{$property}: $value;
+	}
+}
+
+/* -----------------------------------
+	clearfix
+-------------------------------------- */
+@mixin clearfix{
+	&::after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+

@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+@use "../core/mixin/index" as mx;
+@use "../core/function/index" as fx;
+@use "../core/variable/index" as var;
+/* -----------------------------------
+	base
+-------------------------------------- */
+html{
+	font-size: calc(18 / 1920 * 100vw);
+	@include mx.sp(){
+		font-size: calc(44 / 1125 * 100vw);
+	}
+}
+body {
+	position: relative;
+	font-family: 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	line-height: 1;
+	color: #22252c;
+	background-color: #fff;
+	font-feature-settings: "initial";
+	//font-feature-settings: "palt";
+}
+img {
+	width: calc(1920 / 1920 * 100%);
+	height: auto;
+}
+
+// .f30{
+// 	font-size: calc(30 / 18 * 1rem);
+// }
